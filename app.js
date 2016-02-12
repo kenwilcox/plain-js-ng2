@@ -8,13 +8,7 @@
     .Class({
       constructor: function() {}
     });
-  
-  document.addEventListener('DOMContentLoaded', function() {
-    ng.platform.browser.bootstrap(HelloApp);
-  });
-})();
 
-(function() {
   var MyName = 
     ng.core
     .Component({
@@ -24,8 +18,9 @@
     .Class({
       constructor: function() {}
     });
-    
+  
   document.addEventListener('DOMContentLoaded', function() {
+    ng.platform.browser.bootstrap(HelloApp);
     ng.platform.browser.bootstrap(MyName);
-  });      
-})();  
+  });
+})();
