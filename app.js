@@ -8,8 +8,24 @@
     .Class({
       constructor: function() {}
     });
-    
+  
   document.addEventListener('DOMContentLoaded', function() {
     ng.platform.browser.bootstrap(HelloApp);
   });
 })();
+
+(function() {
+  var MyName = 
+    ng.core
+    .Component({
+      selector: 'my-name',
+      template: '<p>My name is mudd</p>'
+    })
+    .Class({
+      constructor: function() {}
+    });
+    
+  document.addEventListener('DOMContentLoaded', function() {
+    ng.platform.browser.bootstrap(MyName);
+  });      
+})();  
